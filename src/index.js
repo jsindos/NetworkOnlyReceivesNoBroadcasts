@@ -26,7 +26,7 @@ const Products = gql`
 `
 
 /**
- * This re-creates the problem seen in pop-f, where the result of a mutation is not being broadcast to a different query in the application, which contains the same underlying data.
+ * Demonstrates mutation result not being broadcast to a different query in the application.
  *
  * There are two solutions on "@apollo/client": "^3.7.12":
  *   1. Turn off `fetchPolicy: 'network-only'`
